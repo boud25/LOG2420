@@ -1,67 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <title>LOG2420 - Détails des séances</title>
-    <script src="seances.js"></script>
-    <link rel="stylesheet" type="text/css" href="seances.css"/>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <title>LOG2420 - Détails des séances</title>
+        <script src="seances.js"></script>
+        <link rel="stylesheet" type="text/css" href="seances.css"/>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    </head>
 
-<h1>Détails des séances</h1>
+    <body>
 
-<p>
-    <a href="">Version</a>
-    <a> pour les chargés de cours.</a>
+        <header>
 
-</p>
+            <div id="HeaderConteneur">
 
-<p>Attention: cette page et son contenu seront modifiés en cours de trimestre selon les besoins. Attendez à la semaine correspondante pour imprimer les transparents!</p>
+                <div>
+                    <a href="http://www.polymtl.ca/">
+                        <img src="logoPoly.gif" class="logo" alt="LOG2420">
+                    </a>
+                </div>
 
-<p> Le détail de chaque séance de cours est fourni semaine par semaine.<br>
+                <div class="description">
+                    <a class="description"> LOG2420,  Analyse et conception d'interfaces utilisateur</a>
+                    <br>
+                    <a class="annee">
+                        Hiver 2016
+                    </a>
+                </div>
 
-    <a href="http:#1">1</a>
-    <a href="http:#2">2</a>
-    <a href="http:#3">3</a>
-    <a href="http:#4">4</a>
-    <a href="http:#5">5</a>
-    <a href="http:#6">6</a>
-    <a href="http:#7">7</a>
-    <a href="http:#8">8</a>
-    <a href="http:#9">9</a>
-    <a href="http:#10">10</a>
-    <a href="http:#11">11</a>
-    <a href="http:#12">12</a>
-    <a href="http:#13">13</a>
-    <a href="http:#14">14</a>
+                <div class="printer">
+                    <img src="printer.png">
+                    <a href="">format</a> <br>
+                    <a href="">d'impression</a>
+                </div>
 
-    <br>
-</p>
+            </div>
 
-<ul>
-    <li class="examen">La matière à réviser pour les examens intra et final est indiquée par cette couleur de fond.</li>
-</ul>
+        </header>
 
-<div class="menu" ng-app="menuApp" ng-controller="menuController">
+        <img src="border.png" class="border">
 
-    <table cellpadding="0" cellspacing="0" ng-repeat="menu in menuList">
+        <div id="conteneur">
 
-        <tbody>
+            <div class="menu" ng-app="menuApp" ng-controller="menuController">
 
-        <tr class>
-            <td colspan="2" class="nav" width="auto">
-                <span class="nav" ng-if="{{menu.Lien}} == '0'">
-                    <a class="nav" href="{{menu.Lien}}">{{menu.Nom}}</a>
-                </span>
-            </td>
-        </tr>
+                <table width="100%">
 
-        </tbody>
+                    <tbody>
 
-    </table>
+                    <tr ng-repeat="menu in menuList">
+                        <td class="link-menu" ng-if="menu.Lien">
+                            <a class="link-menu-{{menu.Niveau}}" href="{{menu.Lien}}">{{menu.Nom}}</a>
+                        </td>
+                        <td class="unlink-menu" ng-if="!menu.Lien">
+                            <a class="unlink-menu">{{menu.Nom}}</a>
+                        </td>
+                    </tr>
 
-</div>
+                    </tbody>
 
-</body>
+                </table>
+
+            </div>
+
+            <div class="details">
+                <h1>Détails des séances</h1>
+
+                <p>
+                    <a href="">Version</a>
+                    <a> pour les chargés de cours.</a>
+
+                </p>
+
+                <p>Attention: cette page et son contenu seront modifiés en cours de trimestre selon les besoins. Attendez à la semaine correspondante pour imprimer les transparents!</p>
+
+                <p> Le détail de chaque séance de cours est fourni semaine par semaine.<br>
+
+                    <a href="http:#1">1</a>
+                    <a href="http:#2">2</a>
+                    <a href="http:#3">3</a>
+                    <a href="http:#4">4</a>
+                    <a href="http:#5">5</a>
+                    <a href="http:#6">6</a>
+                    <a href="http:#7">7</a>
+                    <a href="http:#8">8</a>
+                    <a href="http:#9">9</a>
+                    <a href="http:#10">10</a>
+                    <a href="http:#11">11</a>
+                    <a href="http:#12">12</a>
+                    <a href="http:#13">13</a>
+                    <a href="http:#14">14</a>
+
+                    <br>
+                </p>
+
+                <ul>
+                    <li class="examen">La matière à réviser pour les examens intra et final est indiquée par cette couleur de fond.</li>
+                </ul>
+
+                <table width="100%">
+
+                </table>
+
+            </div>
+        </div>
+    </body>
 </html>

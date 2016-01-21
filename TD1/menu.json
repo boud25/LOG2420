@@ -4,6 +4,7 @@
   {"Nom": "Plan", "Lien": 0, "Niveau":0},
   {"Nom": "Description", "Lien":"http://www.groupes.polymtl.ca/log2420/Plan/planLog2420.php", "Niveau":0},
   {"Nom": "Évaluation", "Lien":"http://www.groupes.polymtl.ca/log2420/Plan/planLog2420.php#eval", "Niveau":1},
+  {"Nom": "Références", "Lien":"http://www.groupes.polymtl.ca/log2420/Plan/biblio.php", "Niveau":0},
   {"Nom": "Ressources", "Lien": 0, "Niveau":0},
   {"Nom": "Recueil d'examens", "Lien": "http://www.groupes.polymtl.ca/log2420/Eval/index.php", "Niveau":0},
   {"Nom": "Les TP", "Lien": 0, "Niveau":0},
