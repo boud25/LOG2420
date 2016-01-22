@@ -4,8 +4,7 @@
     "transparents" : " <ul> <li class=&quot;exam&quot;><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Intro/intro-h.pdf&quot;>Introduction</a> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Intro/intro-b.pdf&quot;>texte</a>) </li></ul>",
 
     "documents" : " <ul> <br><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Intro/quiz.php&quot;></a><li class=&quot;exam&quot;><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Intro/quiz.php&quot;>Quiz de rappel</a> </li></ul> ",
-    "evaluations" : "nbsp; ",
-    "laboratoire" : " ( 8&nbsp;Jan.)<br> Labo 1 (B1)<br><br> "
+    "evaluations" : "nbsp; ", "laboratoire" : " ( 8&nbsp;Jan.)<br> Labo 1 (B1)<br><br> "
   },
 
   {
@@ -91,7 +90,7 @@
   {
     "date" : " 31&nbsp;Mar ",
     "transparents" : " <ul> <li class=&quot;examfinal&quot;><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Dev-recents/dev-recents-h.pdf&quot;>DÃ©veloppements actuels en IU</a> (<a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Dev-recents/dev-recents-b.pdf&quot;>texte</a>) </li></ul> ",
-    "documents" : " <ul> <li><a href=&quot;http://www.youtube.com/watch?v=M0ODskdEPnQ&quot;>BumpTop</a></li> <li><a href=&quot;http://www.e-180.com/&quot;>Rencontres e-180</a></li> <li class=&quot;examfinal&quot;><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Inter-intel/quiz.php&quot;>quiz</a>	 </li></ul> ",
+    "documents" : " <ul> <li><a href=&quot;http://www.youtube.com/watch?v=M0ODskdEPnQ&quot;>BumpTop</a></li> <li><a href=&quot;http://www.e-180.com/&quot;>Rencontres e-180</a></li> <li class=&quot;examfinal&quot;><a href=&quot;http://www.groupes.polymtl.ca/log2420/Seances/Inter-intel/quiz.php&quot;>quiz</a> </li></ul> ",
     "evaluations" : " &nbsp; ",
     "laboratoire" : " (30&nbsp;Mar.)<br> Labo 6 (B2)<br><br> ( 1&nbsp;Apr.)<br> Labo 6 (B1)<br><br> "
   },

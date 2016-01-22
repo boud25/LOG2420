@@ -17,7 +17,7 @@
 
                 <div>
                     <a href="http://www.polymtl.ca/">
-                        <img src="logoPoly.gif" class="logo" alt="LOG2420">
+                        <img src="http://www.groupes.polymtl.ca/log2420/Images/logo03.gif" class="logo" alt="LOG2420">
                     </a>
                 </div>
 
@@ -30,16 +30,15 @@
                 </div>
 
                 <div class="printer">
-                    <img src="printer.png">
-                    <a href="">format</a> <br>
-                    <a href="">d'impression</a>
+                    <img src="http://www.groupes.polymtl.ca/log2420/Images/printer.png">
+                    <a href="">format impression</a>
                 </div>
 
             </div>
 
         </header>
 
-        <img src="border.png" class="border">
+        <img src="http://www.groupes.polymtl.ca/log2420/Images/border.png" class="border">
 
         <div id="conteneur">
 
@@ -62,6 +61,12 @@
 
                 </table>
 
+                <div class="printer printerMenu">
+                    <a href="">
+                    <img src="http://www.groupes.polymtl.ca/log2420/Images/printer.png">
+                    format impression</a>
+                </div>
+
             </div>
 
             <div class="details">
@@ -73,7 +78,7 @@
 
                 </p>
 
-                <p>Attention: cette page et son contenu seront modifiés en cours de trimestre selon les besoins. Attendez à la semaine correspondante pour imprimer les transparents!</p>
+                <p class="bold">Attention: cette page et son contenu seront modifiés en cours de trimestre selon les besoins. Attendez à la semaine correspondante pour imprimer les transparents!</p>
 
                 <p> Le détail de chaque séance de cours est fourni semaine par semaine.<br>
 
@@ -92,17 +97,47 @@
                     <a href="http:#13">13</a>
                     <a href="http:#14">14</a>
 
-                    <br>
+                    <br> <br>
                 </p>
 
                 <ul>
                     <li class="examen">La matière à réviser pour les examens intra et final est indiquée par cette couleur de fond.</li>
                 </ul>
+                <div class="seances" ng-app="app" ng-controller="seancesCtrl">
 
-                <table width="100%">
+                    <table width="100%">
 
-                </table>
+                        <tbody>
+                        <tr>
+                            <th>Semaine</th>
+                            <th>Transparents</th>
+                            <th>Documents</th>
+                            <th>Évaluation</th>
+                            <th>Laboratoire</th>
+                        </tr>
+                        <tr ng-repeat="seance in seances">
+                            <td>
+                                {{seance.date}}
+                            </td>
+                            <td>
+                                {{seance.transparents}}
+                            </td>
+                            <td>
+                                {{seance.documents}}
+                            </td>
+                            <td>
+                                {{seance.evaluations}}
+                            </td>
+                            <td>
+                                {{seance.laboratoire}}
+                            </td>
+                        </tr>
 
+                        </tbody>
+
+                    </table>
+
+                </div>
             </div>
         </div>
     </body>

@@ -43,23 +43,34 @@ a.annee {
     color: midnightblue;
 }
 
-.border {
+.bold{
+    font-weight: bold;
+    color: midnightblue;
+}
 
+.border {
     height: 3px;
     width: 98.8%;
     margin-left: 11px;
 }
 
-.printer {
-
-   position: fixed;
-
-
-    font-size: 12px;
+header .printer {
+    text-align: right;
+    width: 65px;
+    height: 74px;
+    position: absolute;
+    right: 11px;
+    background: #CECAB6;
 }
 
-a.printer {
+.printer {
+    border: 0;
+    position: fixed;
+    font-size: small;
+}
 
+.printerMenu {
+    width: 78px;
 }
 
 #conteneur {
@@ -74,11 +85,10 @@ a.printer {
 
 header {
 
-    background: url("background.jpg") repeat;
-    height: 82px;
-
-    width: 945px;
+    background: url("http://www.groupes.polymtl.ca/log2420/background2.jpg") repeat;
+    height: 78px;
     margin-left: 11px;
+    margin-right: 11px;
     margin-top: 11px;
     margin-bottom: -6px;
 }
@@ -99,7 +109,7 @@ body {
     width: 95%;
 }
 
-.menu table {
+table {
 
     border-spacing: 5px;
     border: 1px solid midnightblue;
@@ -143,4 +153,13 @@ td.unlink-menu {
 a.unlink-menu {
 
     margin-left: 5px;
+}
+
+th {
+    border-bottom: 2pt solid;
+    border-right: 1pt solid;
+    background-color: #f7eecf;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: medium;
+    color: #191970;
 }
