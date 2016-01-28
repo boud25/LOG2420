@@ -40,9 +40,9 @@
 
         <img src="http://www.groupes.polymtl.ca/log2420/Images/border.png" class="border">
 
-        <div id="conteneur">
+        <div id="conteneur" ng-app="menuApp" ng-controller="menuController">
 
-            <div class="menu" ng-app="menuApp" ng-controller="menuController">
+            <div class="menu">
 
                 <table width="100%">
 
@@ -101,35 +101,40 @@
                 </p>
 
                 <ul>
-                    <li class="examen">La matière à réviser pour les examens intra et final est indiquée par cette couleur de fond.</li>
+                    <li class="exam">La matière à réviser pour les examens intra et final est indiquée par cette couleur de fond.</li>
                 </ul>
-                <div class="seances" ng-app="app" ng-controller="seancesCtrl">
+                <div class="seances">
 
                     <table width="100%">
 
                         <tbody>
                         <tr>
-                            <th>Semaine</th>
+                            <th colspan="2">Semaine</th>
                             <th>Transparents</th>
                             <th>Documents</th>
                             <th>Évaluation</th>
                             <th>Laboratoire</th>
                         </tr>
                         <tr ng-repeat="seance in seances">
+
                             <td>
-                                {{seance.date}}
+                                1
                             </td>
-                            <td>
-                                {{seance.transparents}}
+
+                            <td ng-bind-html="seance.date">
+
                             </td>
-                            <td>
-                                {{seance.documents}}
+                            <td ng-bind-html="seance.transparents">
+
                             </td>
-                            <td>
-                                {{seance.evaluations}}
+                            <td class="document" ng-bind-html="seance.documents">
+
                             </td>
-                            <td>
-                                {{seance.laboratoire}}
+                            <td ng-bind-html="seance.evaluations">
+
+                            </td>
+                            <td ng-bind-html="seance.laboratoire">
+
                             </td>
                         </tr>
 
