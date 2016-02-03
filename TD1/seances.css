@@ -10,6 +10,16 @@
     background-color: #FFEEAA;
 }
 
+.\"exam\" {
+
+    background-color: #FFEEAA;
+}
+
+.\"examfinal\" {
+
+    background-color: #FFEEAA;
+}
+
 .details {
 
     width: 90%;
@@ -65,7 +75,7 @@ header .printer {
 
 .printer {
     border: 0;
-    position: fixed;
+    position: absolute;
     font-size: small;
 }
 
@@ -167,9 +177,32 @@ th {
 .seances td {
     border-right: 1pt solid;
     border-bottom: 1pt solid;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: medium;
+    color: #191970;
 }
 
 .document {
 
     width: 40%;
+}
+
+.bottom {
+   padding-bottom: 200px;
+}
+
+.row8 {
+    background-color: lightgray;
+}
+
+.row14 {
+    background-color: lightgray;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
 }

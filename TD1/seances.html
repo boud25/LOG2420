@@ -115,19 +115,22 @@
                             <th>Évaluation</th>
                             <th>Laboratoire</th>
                         </tr>
-                        <tr ng-repeat="seance in seances">
+                        <tr ng-repeat="seance in seances" class="row{{$index+1}}">
 
-                            <td>
-                                1
+                            <td class="right">
+                                {{$index + 1}}
                             </td>
 
-                            <td ng-bind-html="seance.date">
+                            <td ng-bind-html="seance.date" class="right">
 
                             </td>
-                            <td ng-bind-html="seance.transparents">
+                            <td ng-bind-html="seance.transparents" ng-if="$index+1 != 8 && $index+1 != 14">
 
                             </td>
-                            <td class="document" ng-bind-html="seance.documents">
+                            <td class="document" ng-bind-html="seance.documents" ng-if="$index+1 != 8 && $index+1 != 14">
+
+                            </td>
+                            <td colspan="2" class="document center" ng-bind-html="seance.documents" ng-if="$index+1 == 8 || $index+1 == 14">
 
                             </td>
                             <td ng-bind-html="seance.evaluations">
@@ -141,7 +144,7 @@
                         </tbody>
 
                     </table>
-
+                    <p class="bottom"></p>
                 </div>
             </div>
         </div>
