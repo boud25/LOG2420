@@ -26,7 +26,12 @@ $(function() {
         document.getElementById("progress-bar").style.width = "0%";
 
         $('#stop').removeClass('disabled');
+        $('#stop').removeAttr("disabled");
+
         $('#count').addClass('disabled');
+        $('#count').attr("disabled", "disabled");
+
+        $('#text-container').attr("disabled", "disabled");
 
         worker.postMessage($('#text-container').val());
 
@@ -38,7 +43,12 @@ $(function() {
         worker = undefined;
 
         $('#count').removeClass('disabled');
+        $('#count').removeAttr("disabled");
+
         $('#stop').addClass('disabled');
+        $('#stop').attr("disabled", "disabled");
+
+        $('#text-container').removeAttr("disabled");
     });
 
     function stopWorker() {
@@ -47,6 +57,11 @@ $(function() {
         worker = undefined;
 
         $('#count').removeClass('disabled');
+        $('#count').removeAttr("disabled");
+
         $('#stop').addClass('disabled');
+        $('#stop').attr("disabled", "disabled");
+
+        $('#text-container').removeAttr("disabled")
     }
 });
