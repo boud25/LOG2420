@@ -11,12 +11,11 @@ $(function() {
                 worker = new Worker("worker.js");
             }
             worker.onmessage = function(event) {
-
+                //Affichage du progrès du compte
                 document.getElementById("jetons").innerHTML = event.data[0];
                 document.getElementById("progress-bar").style.width = event.data[1] + "%";
 
                 if (event.data[1] == 100) {
-
                     stopWorker();
                 }
             }
@@ -25,6 +24,7 @@ $(function() {
         document.getElementById("jetons").innerHTML = "0";
         document.getElementById("progress-bar").style.width = "0%";
 
+        //Activation/Désactivation des composantes selon l'opération en cours
         $('#stop').removeClass('disabled');
         $('#stop').removeAttr("disabled");
 
@@ -41,7 +41,7 @@ $(function() {
 
         worker.terminate();
         worker = undefined;
-
+        //Activation/Désactivation des composantes selon l'opération en cours
         $('#count').removeClass('disabled');
         $('#count').removeAttr("disabled");
 
@@ -55,7 +55,7 @@ $(function() {
 
         worker.terminate();
         worker = undefined;
-
+        //Activation/Désactivation des composantes selon l'opération en cours
         $('#count').removeClass('disabled');
         $('#count').removeAttr("disabled");
 
