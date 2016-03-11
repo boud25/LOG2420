@@ -1,3 +1,9 @@
+textarea {
+
+    resize: none;
+}
+
 .jetons {
+
     text-align: center;
 }

@@ -14,6 +14,7 @@ $(function() {
                 //Affichage du progrès du compte
                 document.getElementById("jetons").innerHTML = event.data[0];
                 document.getElementById("progress-bar").style.width = event.data[1] + "%";
+                document.getElementById("progress-bar").innerHTML = event.data[1] + "%";
 
                 if (event.data[1] == 100) {
                     stopWorker();
