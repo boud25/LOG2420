@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!-- Ceci permet d'inclure les fichiers CSS -->
+	<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+	<!-- Ceci permet d'inclure les fichiers JavaScript de jQuery, jQuery UI, Google Maps ainsi que map.js -->
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjonwWBWoE1W6L8sU7KPl7zkRLSaPNC2o&amp;sensor=false&callback=initMap" async defer></script>
+
+	<script type="text/javascript" src="map.js"></script>
+
+</head>
+<body>
+<div class="ui">
+	<h1 class="fr">Carte des villes du Québec</h1>
+	<h1 class="eng">Map of the cities of Quebec</h1>
+	<p class="fr">Saisir le nom de la ville du Québec en français:</p>
+	<p class="eng">Enter the name of a city of Quebec in French:</p>
+	<textarea id="villes" rows="1" cols="38"></textarea>
+	<br>
+	<button id="btn-fr">Français</button>
+	<button id="btn-en">English</button>
+
+    <div class="slider">
+        <h3 class="fr">Zoomer</h3>
+        <h3 class="eng">Zoom</h3>
+
+	    <div id="slider"></div>
+    </div>
+	<h2 id="nom-ville"> </h2>
+
+</div>
+
+<div id="carte"></div>
+</body>
+</html>
